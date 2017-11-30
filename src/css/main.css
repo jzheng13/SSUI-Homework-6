@@ -1,0 +1,114 @@
+﻿body {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.topic {
+    color: gold;
+    text-align: center;
+}
+
+.section {
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.container {
+    margin: 0px auto;
+    max-width: 1600px;
+    width: 90%;
+}
+
+svg {
+    display: block;
+}
+
+#orbits {
+    margin: auto;
+}
+
+#orbits path :hover {
+    color: aliceblue;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 2;
+    display: block;
+    margin: auto;
+}
+
+#mecury {
+    height: 15px;
+    width: 15px;
+    top: 7.5px;
+    left: 7.5px;
+    background-color: darkgrey;
+}
+
+#venus {
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    background-color: lightgoldenrodyellow;
+}
+
+#earth {
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+    background-color: darkturquoise;
+}
+
+#mars {
+    height: 15px;
+    width: 15px;
+    top: 7.5px;
+    left: 7.5px;
+    background-color: darkred;
+}
+
+#jupiter {
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    left: 20px;
+    background-color: beige;
+}
+
+#saturn {
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+    background-color: orange;
+}
+
+#uranus {
+    height: 25px;
+    width: 25px;
+    top: 12.5px;
+    left: 12.5px;
+    background-color: paleturquoise;
+}
+
+#neptune {
+    height: 25px;
+    width: 25px;
+    top: 12.5px;
+    left: 12.5px;
+    background-color: dodgerblue;
+}
+
+#pluto {
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    left: 5px;
+    background-color: silver;
+}
