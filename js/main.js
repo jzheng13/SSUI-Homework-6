@@ -56,7 +56,7 @@ $(document).ready(function () {
             `<a class="menu" href="#"><i class="fa fa-bars"></i></a>
             <nav class="side-nav">
                 <ul>
-                    <li><a class="side-nav-link" href="#" onClick=pop('mercury')><i class="fa fa-mercury"></i><em>mercury</em></a></li>
+                    <li><a class="side-nav-link" href="#" onClick=pop('mercury')><i class="fa fa-mercury"></i><em>Mercury</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('venus')><i class="fa fa-venus"></i><em>Venus</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('earth')><i class="fa fa-earth"></i><em>Earth</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('mars')><i class="fa fa-mars"></i><em>Mars</em></a></li>
@@ -136,7 +136,7 @@ $(document).ready(function () {
 
             <div id="mercury-info" class="modal">
                 <div class="modal-content">
-                    <h2>mercury</h2>
+                    <h2>Mercury</h2>
                     <span class="close" id="mercury-close">&times;</span>
                     <div class="split">
                         <img src="img/mercury.png" alt="NA">
