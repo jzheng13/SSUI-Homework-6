@@ -11,7 +11,7 @@ wrapper.classList.add('wrapper');
 fragment.appendChild(wrapper);
 
 for (var i = 0; i < numberOfParticules; i++) {
-    var hue = Math.round(360 / numberOfParticules * i);
+    var hue = 190 + 50 * Math.random();
     var angle = Math.random() * Math.PI * 2;
     var el = document.createElement('div');
     el.classList.add('particule');
@@ -224,7 +224,7 @@ $(document).ready(function () {
         // Add animations
         animate();
         planetEvent();
-    }, 5000);
+    }, 6000);
 });
 
 function animate() {
