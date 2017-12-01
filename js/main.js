@@ -124,15 +124,15 @@ $(document).ready(function () {
                     a 300, 300 0 1, 1 -600, 0" />
             </svg>
 
-            <div class="planet" id="mercury"></div>
+            <div class="planet" id="mercury" onclick=pop('mercury')></div>
 
-            <div class="planet" id="venus"></div>
-            <div class="planet" id="earth"></div>
-            <div class="planet" id="mars"></div>
-            <div class="planet" id="jupiter"></div>
-            <div class="planet" id="saturn"></div>
-            <div class="planet" id="uranus"></div>
-            <div class="planet" id="neptune"></div>
+            <div class="planet" id="venus" onclick=pop('venus')></div>
+            <div class="planet" id="earth" onclick=pop('earth')></div>
+            <div class="planet" id="mars" onclick=pop('mars')></div>
+            <div class="planet" id="jupiter" onclick=pop('jupiter')></div>
+            <div class="planet" id="saturn" onclick=pop('saturn')></div>
+            <div class="planet" id="uranus" onclick=pop('uranus')></div>
+            <div class="planet" id="neptune" onclick=pop('neptune')></div>
 
             <div id="mercury-info" class="modal">
                 <div class="modal-content">
@@ -224,27 +224,9 @@ $(document).ready(function () {
 
         // Add animations
         animate();
-    }, 4000);
+        planetEvent();
+    }, 5000);
 });
-
-function pop(planet) {
-
-    var modal_id = planet + '-info';
-    var modal = document.getElementById(modal_id);
-    modal.style.display = "block";
-
-    var close_id = planet + '-close';
-    var close = document.getElementById(close_id);
-    close.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-}
 
 function animate() {
     var mercury_path = anime.path('#mercury-orbit');
@@ -355,6 +337,35 @@ function animate() {
         loop: true
     });
 
+}
+
+function planetEvent() {
+    var planets = document.getElementsByClassName('planet');
+    console.log(planets);
+    for (i = 0; i < planets.length; i++) {
+        var curr = planets[i];
+        console.log(planets[i].id);
+        curr.onclick = pop(curr.id);
+    }
+}
+
+function pop(planet) {
+
+    var modal_id = planet + '-info';
+    var modal = document.getElementById(modal_id);
+    modal.style.display = "block";
+
+    var close_id = planet + '-close';
+    var close = document.getElementById(close_id);
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 }
 
 

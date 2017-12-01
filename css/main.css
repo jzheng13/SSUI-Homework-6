@@ -200,6 +200,14 @@ em {
     z-index: 2;
 }
 
+#sun:hover, .planet:hover {
+    opacity: 0.5;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 #mecury {
     height: 15px;
     width: 15px;
