@@ -56,7 +56,7 @@ $(document).ready(function () {
             `<a class="menu" href="#"><i class="fa fa-bars"></i></a>
             <nav class="side-nav">
                 <ul>
-                    <li><a class="side-nav-link" href="#" onClick=pop('mecury')><i class="fa fa-mercury"></i><em>Mecury</em></a></li>
+                    <li><a class="side-nav-link" href="#" onClick=pop('mercury')><i class="fa fa-mercury"></i><em>mercury</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('venus')><i class="fa fa-venus"></i><em>Venus</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('earth')><i class="fa fa-earth"></i><em>Earth</em></a></li>
                     <li><a class="side-nav-link" href="#" onClick=pop('mars')><i class="fa fa-mars"></i><em>Mars</em></a></li>
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
                 <circle id="sun" cx="400" cy="400" r="35" fill="gold"></circle>
 
-                <path id="mecury-orbit" fill="none" stroke="white" stroke-width="1"
+                <path id="mercury-orbit" fill="none" stroke="white" stroke-width="1"
                     d="M 400, 400
                     m -75, 0
                     a 75, 75 0 1, 1 150, 0
@@ -124,7 +124,7 @@ $(document).ready(function () {
                     a 300, 300 0 1, 1 -600, 0" />
             </svg>
 
-            <div class="planet" id="mecury"></div>
+            <div class="planet" id="mercury"></div>
 
             <div class="planet" id="venus"></div>
             <div class="planet" id="earth"></div>
@@ -134,12 +134,12 @@ $(document).ready(function () {
             <div class="planet" id="uranus"></div>
             <div class="planet" id="neptune"></div>
 
-            <div id="mecury-info" class="modal">
+            <div id="mercury-info" class="modal">
                 <div class="modal-content">
-                    <h2>Mecury</h2>
-                    <span class="close" id="mecury-close">&times;</span>
+                    <h2>mercury</h2>
+                    <span class="close" id="mercury-close">&times;</span>
                     <div class="split">
-                        <img src="img/mecury.png" alt="NA">
+                        <img src="img/mercury.png" alt="NA">
                         <p>Mercury's eccentric orbit takes the small planet as close as 47 million km (29 million miles) and as far as 70 million km (43 million miles) from the sun. If one could stand on the scorching surface of Mercury when it is at its closest point to the sun, the sun would appear more than three times as large as it does when viewed from Earth.</p>
                     </div>
                 </div>
@@ -247,13 +247,13 @@ function pop(planet) {
 }
 
 function animate() {
-    var mecury_path = anime.path('#mecury-orbit');
+    var mercury_path = anime.path('#mercury-orbit');
 
-    var mecuryPath = anime({
-        targets: '#mecury',
-        translateX: mecury_path,
-        translateY: mecury_path,
-        rotate: mecury_path,   
+    var mercuryPath = anime({
+        targets: '#mercury',
+        translateX: mercury_path,
+        translateY: mercury_path,
+        rotate: mercury_path,   
         duration: 1000,
         loop: true,
         easing: 'linear'
