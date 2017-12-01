@@ -125,7 +125,6 @@ $(document).ready(function () {
             </svg>
 
             <div class="planet" id="mercury" onclick=pop('mercury')></div>
-
             <div class="planet" id="venus" onclick=pop('venus')></div>
             <div class="planet" id="earth" onclick=pop('earth')></div>
             <div class="planet" id="mars" onclick=pop('mars')></div>
