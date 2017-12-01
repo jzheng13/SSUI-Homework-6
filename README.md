@@ -4,7 +4,7 @@ By Jia Zheng (jzheng2@andrew.cmu.edu)
 
 **Notes**
 
-Please use Chrome/Firefox as Edge does not support certain features used.
+Please use Firefox as Edge/Chrome does not support certain features used.
 
 Link to website [here](https://jzheng13.github.io/SSUI-Homework-6).
 
@@ -38,10 +38,13 @@ Additionally, writing the CSS was also challenging for this assignment. Our orig
 2. d3.js by Mike Bostock.
    https://d3js.org/
 
-3. Solar System Exploration, NASA Science. 
+3. Font Awesome by Dave Gandy
+   http://fontawesome.io
+
+4. Solar System Exploration, NASA Science. 
    https://solarsystem.nasa.gov/planets/
 
-4. Planet images by JohnAlemaker.
+5. Planet images by JohnAlemaker.
    https://pixabay.com/en/users/JohnAlemaker-5138849/
 
 
